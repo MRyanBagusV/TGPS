@@ -19,7 +19,8 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 300px;
+            width: 90%;
+            max-width: 400px;
         }
         .login-container h2 {
             margin-bottom: 20px;
@@ -55,6 +56,23 @@
         }
         .login-container a:hover {
             text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .login-container {
+                width: 90%;
+                padding: 15px;
+            }
+            .login-container h2 {
+                font-size: 18px;
+            }
+            .login-container input[type="text"],
+            .login-container input[type="password"] {
+                padding: 8px;
+            }
+            .login-container button {
+                padding: 8px;
+                font-size: 14px;
+            }
         }
     </style>
     <script>
