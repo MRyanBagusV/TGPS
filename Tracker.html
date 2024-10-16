@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title>Vehicle Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://placehold.co/800x600?text=Map+Background');
+            background-size: cover;
+            background-position: center;
+        }
+        .info-box {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        .info-box h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .info-box p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .info-box p span {
+            font-weight: bold;
+        }
+        .info-box .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .info-box .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .info-box .buttons .nav-button {
+            background-color: #555;
+            color: #fff;
+        }
+        .info-box .buttons .arr-button {
+            background-color: #004d00;
+            color: #fff;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .footer-buttons {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 400px;
+        }
+        .footer-buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .footer-buttons .engine-on {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        .footer-buttons .engine-off {
+            background-color: #f44336;
+            color: #fff;
+        }
+        .footer-buttons .playback {
+            background-color: #2196F3;
+            color: #fff;
+        }
+        @media (min-width: 768px) {
+            .info-box {
+                width: 60%;
+            }
+            .footer-buttons {
+                width: 60%;
+            }
+        }
+        @media (min-width: 1024px) {
+            .info-box {
+                width: 40%;
+            }
+            .footer-buttons {
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-box">
+            <h1>B 6382 ZRS</h1>
+            <p><span>Phone</span> : 081130551562</p>
+            <p><span>Imei.</span> : 862292051396133</p>
+            <p><span>Garansi</span> : 11/03/2023</p>
+            <p><span>Tgl</span> : 16/10/2024 16:32:09</p>
+            <p><span>Koordinat</span> : -6.1565237, 106.930695</p>
+            <p><span>Kecepatan</span> : 0 Km/Jam</p>
+            <p><span>Mesin</span> : OFF</p>
+            <p><span>Parkir</span> : 00:00:23</p>
+            <p><span>Odometer</span> : 393,847 Km</p>
+            <p>UPT Pusat Perkayuan Sukapura - Dinas Kelautan dan Pertanian Provinsi DKI Jakarta, Gang Salon, RT 05, RW 04, Suka Pura, Sukapura, Cilincing, Jakarta Utara, JKT, 14140, Indonesia</p>
+            <div class="buttons">
+                <button class="nav-button">NAVIGASI</button>
+                <button class="nav-button">STREETVIEW</button>
+            </div>
+            <button class="nav-button">ARROUND</button>
+        </div>
+        <div class="footer-buttons">
+            <button class="engine-on">ENGINE ON</button>
+            <button class="engine-off">ENGINE OFF</button>
+            <button class="playback">PLAYBACK</button>
+        </div>
+    </div>
+</body>
+</html>
